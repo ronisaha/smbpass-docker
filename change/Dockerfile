@@ -8,7 +8,7 @@ RUN set -eux; \
 	apt-get install -y --no-install-recommends samba-common-bin; \
 	rm -rf /var/lib/apt/lists/*
 
-COPY run.sh /usr/loca/bin/run.sh
+COPY change.sh /usr/local/bin/run.sh
 
-ENTRYPOINT ["/usr/loca/bin/run.sh"]
+ENTRYPOINT ["/usr/local/bin/run.sh"]
 
