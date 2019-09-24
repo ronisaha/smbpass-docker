@@ -14,6 +14,7 @@ if [ -z "${username}" ]; then
 fi
 
 read -sp "Enter currennt password of user $username@$DOMAIN_NAME: " cpassword
+echo
 read -sp "Enter New password: " password
 
 if [[ -z ${DOMAIN_NAME} || -z ${username} || -z ${cpassword} || -z ${password} ]]; then
